@@ -113,4 +113,12 @@ const filtrarpreciomenorA = (precio) => {
 console.log(filtrarpreciomenorA(600));
 
 // c) El nombre de cada pizza con su respectivo precio.
+
+const PizzasconSaboryPrecio = pizzas.filter((pizzas) => {
+  return pizzas.sabordepizza && pizzas.precio;
+});
+
+// PizzasconSaboryPrecio.forEach((pizzas) => {
+//   console.log(`La pizza de ${pizzas.sabordepizza}  cuesta $${pizzas.precio}`);
+// });
 // d) Todos los ingredientes de cada pizza (En cada iteración imprimir los ingredientes de la pizza actual). Ayuda: van a tener que realizar dos recorridos, ya que cada pizza del array de pizzas tiene un array de ingredientes.
