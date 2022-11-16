@@ -98,9 +98,9 @@ const idimparpizzas = pizzas.filter((pizzas) => {
   return pizzas.id % 2 === 1;
 });
 
-// idimparpizzas.forEach((pizzas) => {
-//   console.log(`La pizza ${pizzas.sabordepizza} tiene id impar`);
-// });
+idimparpizzas.forEach((pizzas) => {
+  console.log(`La pizza ${pizzas.sabordepizza} tiene id impar`);
+});
 
 // b) ¿Hay alguna pizza que valga menos de $600?
 
@@ -112,7 +112,7 @@ const haypizzasconpreciomenorA = (precio) => {
     : console.log(`no hay pizzas con menor precio a $${precio}`);
 };
 
-// haypizzasconpreciomenorA(600);
+haypizzasconpreciomenorA(600);
 
 // c) El nombre de cada pizza con su respectivo precio.
 
@@ -120,9 +120,9 @@ const PizzasconSaboryPrecio = pizzas.filter((pizzas) => {
   return pizzas.sabordepizza && pizzas.precio;
 });
 
-// PizzasconSaboryPrecio.forEach((pizzas) => {
-//   console.log(`La pizza de ${pizzas.sabordepizza}  cuesta $${pizzas.precio}`);
-// });
+PizzasconSaboryPrecio.forEach((pizzas) => {
+  console.log(`La pizza de ${pizzas.sabordepizza}  cuesta $${pizzas.precio}`);
+});
 
 // d) Todos los ingredientes de cada pizza (En cada iteración imprimir los ingredientes de la pizza actual).
 //  Ayuda: van a tener que realizar dos recorridos, ya que cada pizza del array de pizzas tiene un array de ingredientes.
@@ -131,8 +131,8 @@ const Pizzasconsaboryingredientes = pizzas.filter((pizzas) => {
   return pizzas.sabordepizza && pizzas.ingredientes;
 });
 
-// PizzasconSaboryPrecio.forEach((pizzas) => {
-//   console.log(
-//     `La pizza de ${pizzas.sabordepizza}  contiene los ingredientes ${pizzas.ingredientes}`
-//   );
-// });
+PizzasconSaboryPrecio.forEach((pizzas) => {
+  console.log(
+    `La pizza de ${pizzas.sabordepizza}  contiene los ingredientes ${pizzas.ingredientes}`
+  );
+});
